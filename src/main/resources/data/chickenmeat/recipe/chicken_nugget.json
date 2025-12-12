@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:wheat",
+        "minecraft:cooked_chicken",
+        "minecraft:cooked_chicken",
+        "minecraft:cooked_chicken"
+    ],
+    "result": {
+        "id": "chickenmeat:chicken_nugget",
+        "count": 4
+    }
+}
