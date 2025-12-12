@@ -5,13 +5,13 @@
 	"name": "Chickenmeat",
 	"description": "Cursed minecraft mod that adds chicken meats.",
 	"authors": [
-		"Me!"
+		"Ankpudding"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/chickenmeat/icon.png",
 	"environment": "*",
 	"entrypoints": {
