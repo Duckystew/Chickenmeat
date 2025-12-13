@@ -19,7 +19,10 @@ public class Chickenmeat implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Hello from Ankpudding! Thanks for playing this cursed mod!");
+
+		//Initialize blocks and items
 		ModItems.initialize();
+		ModBlocks.initialize();
 	}
 }
