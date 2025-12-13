@@ -12,17 +12,41 @@ jobs:
     steps:
       - name: checkout repository
         uses: actions/checkout@v4
+
       - name: validate gradle wrapper
         uses: gradle/actions/wrapper-validation@v4
-      - name: setup jdk
+
+      - name: setup JDK
         uses: actions/setup-java@v4
         with:
           java-version: '21'
           distribution: 'microsoft'
+
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
-      - name: build
-        run: ./gradlew build
+
+      # Cache Gradle distributions to avoid repeated downloads
+      - name: Cache Gradle Wrapper
+        uses: actions/cache@v3
+        with:
+          path: ~/.gradle/wrapper/dists
+          key: gradle-wrapper-${{ hashFiles('**/gradle/wrapper/gradle-wrapper.properties') }}
+          restore-keys: |
+            gradle-wrapper-
+
+      # Increase Gradle download timeout
+      - name: Set Gradle timeout
+        run: |
+          echo "systemProp.gradle.internal.http.socketTimeout=60000" >> gradle.properties
+          echo "systemProp.gradle.internal.http.connectionTimeout=60000" >> gradle.properties
+
+      # Build with retry in case of transient network issues
+      - name: Build project
+        run: |
+          for i in {1..3}; do
+            ./gradlew build && break || sleep 10
+          done
+
       - name: capture build artifacts
         uses: actions/upload-artifact@v4
         with:
