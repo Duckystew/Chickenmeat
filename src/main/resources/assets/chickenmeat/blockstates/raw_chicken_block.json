@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
-      "model": "chickenmeat:block/raw_chicken_block"
-    }
+    "": [
+      { "model": "chickenmeat:block/raw_chicken_block",   "y": 0 },
+      { "model": "chickenmeat:block/raw_chicken_block",  "y": 90 },
+      { "model": "chickenmeat:block/raw_chicken_block", "y": 180 },
+      { "model": "chickenmeat:block/raw_chicken_block", "y": 270 }
+    ]
   }
 }

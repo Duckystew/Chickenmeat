@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "chickenmeat:block/cooked_chicken_block"
+  }
+}

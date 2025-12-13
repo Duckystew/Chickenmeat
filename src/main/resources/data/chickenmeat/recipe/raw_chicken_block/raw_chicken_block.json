@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:chicken",
+        "minecraft:chicken",
+        "minecraft:chicken",
+        "minecraft:chicken",
+        "minecraft:chicken",
+        "minecraft:chicken",
+        "minecraft:chicken",
+        "minecraft:chicken",
+        "minecraft:chicken"
+    ],
+    "result": {
+        "id": "chickenmeat:raw_chicken_block",
+        "count": 1
+    }
+}

@@ -16,11 +16,22 @@ import net.minecraft.resources.Identifier;
 import java.util.function.Function;
 
 public class ModBlocks {
+    public static final BlockBehaviour.Properties CHICKEN_BLOCK_PROPERTIES = BlockBehaviour.Properties.of()
+            .sound(SoundType.SLIME_BLOCK)
+            .strength(1.0f);
+
     public static final Block RAW_CHICKEN_BLOCK = register(
             "raw_chicken_block",
             Block::new,
-            BlockBehaviour.Properties.of()
-                    .sound(SoundType.SLIME_BLOCK)
+            CHICKEN_BLOCK_PROPERTIES
+            ,
+            true
+    );
+
+    public static final Block COOKED_CHICKEN_BLOCK = register(
+            "cooked_chicken_block",
+            Block::new,
+            CHICKEN_BLOCK_PROPERTIES
             ,
             true
     );
@@ -55,6 +66,10 @@ public class ModBlocks {
     public static void initialize(){
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FOOD_AND_DRINKS).register((itemGroup) -> {
             itemGroup.accept(ModBlocks.RAW_CHICKEN_BLOCK.asItem());
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FOOD_AND_DRINKS).register((itemGroup) -> {
+            itemGroup.accept(ModBlocks.COOKED_CHICKEN_BLOCK.asItem());
         });
     }
 }

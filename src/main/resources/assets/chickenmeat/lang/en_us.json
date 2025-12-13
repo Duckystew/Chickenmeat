@@ -1,4 +1,5 @@
 {
   "item.chickenmeat.chicken_nugget": "Chicken Nugget",
-  "block.chickenmeat.raw_chicken_block": "Block of Raw Chicken"
+  "block.chickenmeat.raw_chicken_block": "Block of Raw Chicken",
+  "block.chickenmeat.cooked_chicken_block": "Block of Cooked Chicken"
 }

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smoking",
+    "ingredient": "chickenmeat:raw_chicken_block",
+    "result": {
+        "id": "chickenmeat:cooked_chicken_block"
+    },
+    "experience": 0.1,
+    "cookingtime": 600
+}

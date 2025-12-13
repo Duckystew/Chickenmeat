@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chickenmeat:block/cooked_chicken_block"
+  }
+}

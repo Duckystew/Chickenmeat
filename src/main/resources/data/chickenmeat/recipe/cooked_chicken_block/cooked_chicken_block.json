@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:cooked_chicken",
+        "minecraft:cooked_chicken",
+        "minecraft:cooked_chicken",
+        "minecraft:cooked_chicken",
+        "minecraft:cooked_chicken",
+        "minecraft:cooked_chicken",
+        "minecraft:cooked_chicken",
+        "minecraft:cooked_chicken",
+        "minecraft:cooked_chicken"
+    ],
+    "result": {
+        "id": "chickenmeat:cooked_chicken_block",
+        "count": 1
+    }
+}
