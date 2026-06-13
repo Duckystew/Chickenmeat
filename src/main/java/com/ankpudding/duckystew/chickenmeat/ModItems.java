@@ -1,6 +1,6 @@
 package com.ankpudding.duckystew.chickenmeat;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -53,7 +53,7 @@ public class ModItems{
     }
 
     public static void initialize() {
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FOOD_AND_DRINKS)
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS)
                 .register(fabricItemGroupEntries -> fabricItemGroupEntries.accept(ModItems.CHICKEN_NUGGET));
     }
 }
