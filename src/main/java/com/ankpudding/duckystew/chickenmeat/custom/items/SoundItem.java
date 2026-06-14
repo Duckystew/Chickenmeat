@@ -1,4 +1,4 @@
-package com.ankpudding.duckystew.chickenmeat.custom;
+package com.ankpudding.duckystew.chickenmeat.custom.items;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
