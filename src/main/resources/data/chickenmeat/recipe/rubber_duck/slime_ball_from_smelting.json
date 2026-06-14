@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0,
+  "cookingtime": 50,
+  "ingredient": "chickenmeat:rubber_duck",
+  "result": {
+    "id": "minecraft:slime_ball"
+  }
+}

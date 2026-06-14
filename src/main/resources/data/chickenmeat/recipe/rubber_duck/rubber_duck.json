@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #I",
+    "#oO",
+    " W "
+  ],
+  "key": {
+    "#": "minecraft:yellow_dye",
+    "I": "minecraft:ink_sac",
+    "o": "minecraft:slime_ball",
+    "O": "minecraft:orange_dye",
+    "W": "minecraft:white_dye"
+  },
+  "result": {
+    "id": "chickenmeat:rubber_duck"
+  }
+}
