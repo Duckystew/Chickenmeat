@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.resources.Identifier;
 
 import java.util.function.Function;
+import java.util.function.ToIntFunction;
 
 public class ModBlocks {
     public static final BlockBehaviour.Properties CHICKEN_BLOCK_PROPERTIES = BlockBehaviour.Properties.of()
@@ -32,6 +33,15 @@ public class ModBlocks {
             "cooked_chicken_block",
             Block::new,
             CHICKEN_BLOCK_PROPERTIES
+            ,
+            true
+    );
+
+    public static final Block DUCK_STATUE = register(
+            "duck_statue_block",
+            Block::new,
+            BlockBehaviour.Properties.of()
+                    .destroyTime(20f)
             ,
             true
     );
