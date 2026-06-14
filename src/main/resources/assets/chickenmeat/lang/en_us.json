@@ -1,5 +1,7 @@
 {
+  "item.chickenmeat.rubber_duck": "Rubber Duck",
   "item.chickenmeat.chicken_nugget": "Chicken Nugget",
   "block.chickenmeat.raw_chicken_block": "Block of Raw Chicken",
-  "block.chickenmeat.cooked_chicken_block": "Block of Cooked Chicken"
+  "block.chickenmeat.cooked_chicken_block": "Block of Cooked Chicken",
+  "sound.chickenmeat.rubber_duck_squeak": "Rubber duck squeaking"
 }

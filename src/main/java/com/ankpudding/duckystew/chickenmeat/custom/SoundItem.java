@@ -1,7 +1,6 @@
 package com.ankpudding.duckystew.chickenmeat.custom;
 
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -21,7 +20,7 @@ public class SoundItem extends Item {
     @Override
     public @NonNull InteractionResult use(final Level level, final @NonNull Player player, final @NonNull InteractionHand hand) {
         if (level.isClientSide()) {
-            player.playSound(SoundEvents.COPPER_BREAK);
+            player.playSound(useSound);
         }
         else {
             level.playSound(

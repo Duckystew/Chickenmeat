@@ -7,7 +7,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -48,7 +47,7 @@ public class ModItems{
 
     public static final Item RUBBER_DUCK = register(
             "rubber_duck",
-            (properties) -> new SoundItem(properties, SoundEvents.COPPER_BREAK),
+            (properties) -> new SoundItem(properties, ModSounds.RUBBER_DUCK_SQUEAK),
             new SoundItem.Properties()
                     //Item max stack size
                     .stacksTo(16)

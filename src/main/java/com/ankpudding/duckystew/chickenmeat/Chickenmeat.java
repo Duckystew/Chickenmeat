@@ -24,5 +24,6 @@ public class Chickenmeat implements ModInitializer {
 		//Initialize blocks and items
 		ModItems.initialize();
 		ModBlocks.initialize();
+		ModSounds.initialize();
 	}
 }
