@@ -2,6 +2,7 @@ package com.ankpudding.duckystew.chickenmeat.custom;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -34,7 +35,7 @@ public class SoundItem extends Item {
                     1.0f
             );
         }
-
-        return InteractionResult.PASS;
+        player.awardStat(Stats.ITEM_USED.get(this));
+        return InteractionResult.SUCCESS;
     }
 }

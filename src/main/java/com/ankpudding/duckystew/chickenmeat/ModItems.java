@@ -14,6 +14,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.component.Consumables;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 
 import java.util.function.Function;
@@ -50,7 +51,7 @@ public class ModItems{
             (properties) -> new SoundItem(properties, ModSounds.RUBBER_DUCK_SQUEAK),
             new SoundItem.Properties()
                     //Item max stack size
-                    .stacksTo(16)
+                    .stacksTo(1)
                     .useCooldown(0.5f)
     );
 
