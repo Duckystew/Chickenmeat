@@ -86,5 +86,9 @@ public class ModBlocks {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register((itemGroup) -> {
             itemGroup.accept(ModBlocks.COOKED_CHICKEN_BLOCK.asItem());
         });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register((itemGroup) -> {
+            itemGroup.accept(ModBlocks.DUCK_STATUE.asItem());
+        });
     }
 }
