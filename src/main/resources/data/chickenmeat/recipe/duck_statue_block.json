@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "chickenmeat:rubber_duck"
+  },
+  "result": {
+    "id": "chickenmeat:duck_statue_block"
+  }
+}
