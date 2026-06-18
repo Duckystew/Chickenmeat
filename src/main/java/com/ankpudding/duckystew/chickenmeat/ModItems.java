@@ -68,6 +68,7 @@ public class ModItems{
     }
 
     public static void initialize() {
+        Chickenmeat.LOGGER.info("Registering " + Chickenmeat.MOD_ID + " Items");
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS)
                 .register(fabricItemGroupEntries -> fabricItemGroupEntries.accept(ModItems.CHICKEN_NUGGET));
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS)

@@ -72,6 +72,8 @@ public class ModBlocks {
     }
 
     public static void initialize(){
+        Chickenmeat.LOGGER.info("Registering " + Chickenmeat.MOD_ID + " Blocks");
+
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register((itemGroup) -> {
             itemGroup.accept(ModBlocks.RAW_CHICKEN_BLOCK.asItem());
         });
