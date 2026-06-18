@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "chickenmeat:block/duck_statue_block" },
+    "facing=east":  { "model": "chickenmeat:block/duck_statue_block", "y": 90 },
+    "facing=south": { "model": "chickenmeat:block/duck_statue_block", "y": 180 },
+    "facing=west":  { "model": "chickenmeat:block/duck_statue_block", "y": 270 }
+  }
+}

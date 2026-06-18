@@ -1,5 +1,6 @@
 package com.ankpudding.duckystew.chickenmeat;
 
+import com.ankpudding.duckystew.chickenmeat.custom.blocks.DuckStatueBlock;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -9,6 +10,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.resources.Identifier;
@@ -37,9 +39,12 @@ public class ModBlocks {
 
     public static final Block DUCK_STATUE = register(
             "duck_statue_block",
-            Block::new,
+            DuckStatueBlock::new,
             BlockBehaviour.Properties.of()
                     .destroyTime(20f)
+                    .noOcclusion()
+                    .isValidSpawn(Blocks::never)
+                    .isRedstoneConductor(Blocks::never)
             ,
             true
     );
