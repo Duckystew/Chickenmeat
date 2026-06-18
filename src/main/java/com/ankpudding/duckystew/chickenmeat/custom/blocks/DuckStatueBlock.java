@@ -1,5 +1,6 @@
 package com.ankpudding.duckystew.chickenmeat.custom.blocks;
 
+import com.ankpudding.duckystew.chickenmeat.ModBlocks;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -51,7 +52,11 @@ public class DuckStatueBlock extends HorizontalDirectionalBlock {
 
     @Override
     protected boolean canSurvive(final @NonNull BlockState state, final LevelReader level, final BlockPos pos) {
-        return !level.isEmptyBlock(pos.below());
+        boolean survive;
+        if (level.isEmptyBlock(pos.below())){
+            survive = false;
+        } else survive = level.getBlockState(pos.below()).getBlock() != ModBlocks.DUCK_STATUE;
+        return survive;
     }
 
     @Override
